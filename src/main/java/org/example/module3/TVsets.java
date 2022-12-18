@@ -8,7 +8,7 @@ package org.example.module3;
 
 public class TVsets {
     public static void main(String[] args) {
-
+        String str = "try";
 
     }
 }
