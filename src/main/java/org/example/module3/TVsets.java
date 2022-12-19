@@ -12,6 +12,7 @@ import java.util.List;
 
 public class TVsets {
     public static void main(String[] args) {
+ 
 
         Tv tv1 = new Tv("Samsung",55.0,1);
         Tv tv2 = new Tv("LG LED",50.0,1);
@@ -25,6 +26,9 @@ public class TVsets {
 
         Double topprice = 0.0;
         Tv whichOf = listTv.get(0);
+
+        
+
 
         for (int i = 0; i < listTv.size(); i++) {
             if(listTv.get(i).getName().contains("LED") &&
