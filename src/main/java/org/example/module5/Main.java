@@ -12,7 +12,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Books book1 = new Books("Грозовой перевал", "Бронте", 700.0, 1847, 413);
+        Books book1 = new Books("Турецкий гамбит", "Акунин", 700.0, 2010, 797);
         Books book2 = new Books("Десять нeгpитят", "Кристи", 650.0, 2011, 887);
         Books book3 = new Books("Мастер и Маргарита", "Булгаков", 300.0, 2015, 457);
         Books book4 = new Books("Мартин Иден", "Лондон", 345.3, 2002, 811);
@@ -25,7 +25,7 @@ public class Main {
         System.out.println("Название книг , удовлетворяющих условию : \n");
         for (Books book : listBooks) {
             if (book.PrimeNumbers(book.getCount()) &&
-                    book.getAuthor().contains("а") &&
+                    (book.getAuthor().contains("а") || book.getAuthor().contains("А")) &&
                     book.getYear() >= 2010) {
                 System.out.println(book.getTitleBook());
             }
