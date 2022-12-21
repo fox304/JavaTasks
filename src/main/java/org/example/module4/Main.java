@@ -36,13 +36,13 @@ public class Main {
 
         for (Oil whichOf : listOils) {
 
-            if (whichOf.getVariaty().equals(str) && whichOf.getCost() < min) {
+            if (whichOf.getVariety().equals(str) && whichOf.getCost() < min) {
                 min = whichOf.getCost();
                 betterPrice = whichOf;
             }
         }
 
-        System.out.println("У товара "+betterPrice.getName()+ " сорт "+betterPrice.getVariaty()+
+        System.out.println("У товара "+betterPrice.getName()+ " сорт "+betterPrice.getVariety()+
         " наименьшая цена "+betterPrice.getCost());
     }
 }

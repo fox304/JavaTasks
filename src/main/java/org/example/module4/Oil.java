@@ -8,14 +8,14 @@ package org.example.module4;
 
 public class Oil {
 
-    String country,variaty,name;
-    Float weght,cost;
+    String country, variety,name;
+    Float weight,cost;
 
     public Oil(String country, String variaty, String name, Float weght, Float cost) {
         this.country = country;
-        this.variaty = variaty;
+        this.variety = variaty;
         this.name = name;
-        this.weght = weght;
+        this.weight = weght;
         this.cost = cost;
     }
 
@@ -23,8 +23,8 @@ public class Oil {
         this.country = country;
     }
 
-    public String getVariaty() {
-        return variaty;
+    public String getVariety() {
+        return variety;
     }
 
     public String getName() {
